@@ -14,6 +14,7 @@
   load printers = <%= node["samba"]["load_printers"] %>
   passdb backend = <%= node["samba"]["passdb_backend"] %>
   dns proxy = <%= node["samba"]["dns_proxy"] %>
+  map to guest = <%= node["samba"]["map_to_guest"] %>
 
 #============================ Share Definitions ==============================
 <% @shares.each do |share,option| -%>
